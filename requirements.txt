@@ -7,3 +7,4 @@ cohere
 tiktoken
 pillow
 scikit-learn==1.2.2
+setuptools
