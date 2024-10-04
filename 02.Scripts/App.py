@@ -38,7 +38,7 @@ def _ask_chatgpt1(texto, _client, _context='', _model = "gpt-3.5-turbo-0125", _d
     return answer_str
 
 @st.cache_data(ttl=120)
-def _ask_chatgpt2(texto, _client, _context='', _model = "gpt-3.5-turbo-0125", _drpta = 'json_object', _temperature=0):
+def _ask_chatgpt2(texto, _client, _context='', _model = "gpt-4o-mini", _drpta = 'json_object', _temperature=0):
     texto = str(texto)
     response = _client.chat.completions.create(
         model=_model,
